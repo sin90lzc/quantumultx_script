@@ -23,6 +23,6 @@ if (reset) {
 }
 
 $done({
-  status: 200,
+  status: "HTTP/1.1 200 OK",
   body: JSON.stringify({ series, next, reset })
 });
