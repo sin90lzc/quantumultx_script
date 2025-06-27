@@ -9,7 +9,7 @@
   const url = $request.url;
   const query = getQueryParams(url);
   const series = query.series || "default";
-  const token = query.token || "";
+  const token = query.t || "";
 
   const aria2Host = "https://a2d.8v8.fun:4443/jsonrpc"; // ← 请替换
   
