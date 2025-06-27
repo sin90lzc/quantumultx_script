@@ -20,7 +20,7 @@
   try {
     const res = await $task.fetch({
       method: "GET",
-      url: `http://qx.local/counter?series=${series}`
+      url: `http://quantumult-x:9999/counter?series=${series}`
     });
     const json = JSON.parse(res.body);
     episodeNumber = String(json.next).padStart(3, "0");
