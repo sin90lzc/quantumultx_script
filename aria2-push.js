@@ -8,7 +8,7 @@
   }
   const url = $request.url;
   const query = getQueryParams(url);
-  const series = "wulinchuanqi";
+  const series = "heiyingchuanqi";
   
   const token = "SpIwIwGdmp0dwgX";
 
