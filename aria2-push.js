@@ -53,7 +53,7 @@
       body: JSON.stringify(json)
     });
 
-    console.log(`✅ 成功推送到 Aria2: ${url}`+JSON.stringify(json));
+    console.log(`✅ 成功推送到 Aria2: ${url}`);
   } catch (e) {
     console.log(`❌ 推送失败: ${e}`);
   }
