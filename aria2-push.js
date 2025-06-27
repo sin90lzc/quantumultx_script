@@ -27,6 +27,7 @@
   } catch (e) {
     console.log("❌ 获取集数编号失败：" + e);
   }
+  const filename = `${series}${episodeNumber}.mp3`;
   const json = {
     jsonrpc: "2.0",
     method: "aria2.addUri",
@@ -35,7 +36,8 @@
       `token:${token}`,
       [url],
       {
-        dir: downloadDir
+        dir: downloadDir,
+        out: filename
       }
     ]
   };
